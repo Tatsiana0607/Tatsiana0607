@@ -1,0 +1,24 @@
+
+.rect1, .rect2, .moon{
+    border: 15px solid red;
+    width: 130px;
+    height: 130px;
+    margin: 50px;
+}
+
+
+.rect1{
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+}
+
+.rect2{
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.moon{
+    border-radius: 100%;
+    border-width: 0 0 15px 15px;
+
+}
