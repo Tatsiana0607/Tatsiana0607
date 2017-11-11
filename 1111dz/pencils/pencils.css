@@ -1,7 +1,7 @@
 html {
     height: 100vh;
     background:  repeating-linear-gradient(to bottom, #656362 0, #656362 1px, transparent 1px, transparent 25px),
-    repeating-linear-gradient(to right, #656362 0, #656362 1px, #ede5c3 1px, #ede5c3 25px);
+                 repeating-linear-gradient(to right, #656362 0, #656362 1px, #fbf6e0 1px, #fbf6e0 25px);
 }
 
 body{
@@ -12,5 +12,63 @@ body{
     width: 86vw;
     height: 100vh;
     border-right: solid #dd3c38 3px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
+
+
+
+
+.pencil1{
+    position: absolute;
+    top: 125px;
+    left: 25px;
+}
+
+.eraser1, .holder1, .body1, .tip1, .graphite1{
+    float: left;
+}
+
+.eraser1, .holder1, .body1{
+    height: 80px;
+}
+
+.tip1, .graphite1{
+    width: 0;
+    height: 0;
+}
+
+.eraser1{
+    width: 50px;
+    background-color: palevioletred;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.holder1{
+    width: 40px;
+    background: linear-gradient(to bottom, #706f6f, #f9f5f5, #706f6f);
+}
+
+.body1{
+    width: 60vw;
+    background: linear-gradient(to bottom, #202f5c, #6b85d0, #202f5c);
+}
+
+.tip1{
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid #f5deb2;
+}
+
+.graphite1{
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #3e3e3d;
+    position: relative;
+    top: 28px;
+    left: -13px;
+}
+
 
