@@ -1,0 +1,16 @@
+html {
+    height: 100vh;
+    background:  repeating-linear-gradient(to bottom, #656362 0, #656362 1px, transparent 1px, transparent 25px),
+    repeating-linear-gradient(to right, #656362 0, #656362 1px, #ede5c3 1px, #ede5c3 25px);
+}
+
+body{
+    margin: 0;
+}
+
+.margin{
+    width: 86vw;
+    height: 100vh;
+    border-right: solid #dd3c38 3px;
+}
+
