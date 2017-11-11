@@ -12,16 +12,17 @@ body{
     width: 86vw;
     height: 100vh;
     border-right: solid #dd3c38 3px;
-    position: absolute;
     top: 0;
     z-index: -1;
 }
 
 
+.margin, .pencil1, .pencil2{
+    position: absolute;
+}
 
 
 .pencil1{
-    position: absolute;
     top: 125px;
     left: 25px;
 }
@@ -34,7 +35,11 @@ body{
     height: 80px;
 }
 
-.tip1, .graphite1{
+.eraser2, .holder2, .body2{
+    width: 80px;
+}
+
+.tip1, .graphite1, .tip2, .graphite2{
     width: 0;
     height: 0;
 }
@@ -72,3 +77,43 @@ body{
 }
 
 
+
+
+.pencil2{
+    top: 10px;
+    left: 200px;
+}
+
+.eraser2{
+    height: 50px;
+    background-color: palevioletred;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.holder2{
+    height: 40px;
+    background: linear-gradient(to right, #706f6f, #f9f5f5, #706f6f);
+}
+
+.body2{
+    height: 40vh;
+    background: linear-gradient(to right, #d47979 0,    #d47979 20px,
+                                          #c44f4f 20px, #c44f4f 60px,
+                                          #a41010 60px, #a41010 80px);
+}
+
+.tip2{
+    border-top: 40px solid #f5deb2;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+}
+
+.graphite2{
+    border-top: 12px solid #3e3e3d;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: relative;
+    top: -11px;
+    left: 28px;
+}
