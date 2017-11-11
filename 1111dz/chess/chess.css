@@ -1,8 +1,8 @@
 
 .grey{
     background-color: dimgrey;
-    width: 70px;
-    height: 70px;
+    width: 10.5vh;
+    height: 10.5vh;
 }
 
 
@@ -17,55 +17,56 @@ table{
 .pawn_white, .pawn_black, .castle_white, .castle_black, .knight_white, .knight_black, .bishop_white, .bishop_black,
 .queen_white, .queen_black, .king_white, .king_black{
     background: url("chess.png") no-repeat;
-    width: 50px;
-    height: 50px;
+    background-size: 45vh;
+    width: 7vh;
+    height: 7vh;
     margin: auto;
 }
 
 .pawn_white{
-    background-position: -262px -51px;
+    background-position: -39.3vh -7.5vh;
 }
 
 .pawn_black{
-    background-position: -262px 0px;
+    background-position: -39.2vh 0vh;
 }
 
 .castle_white{
-    background-position: -102px -51px;
+    background-position: -15.4vh -7.5vh;
  }
 
 .castle_black{
-    background-position: -102px 0px;
+    background-position: -15.4vh 0vh;
 }
 
 .knight_white{
-    background-position: -210px -51px;
+    background-position: -31.3vh -7.5vh;
 }
 
 .knight_black{
-    background-position: -210px 0px;
+    background-position: -31.3vh 0vh;
 }
 
 .bishop_white{
-    background-position: -155px -51px;
+    background-position: -23.3vh -7.5vh;
 }
 
 .bishop_black{
-    background-position: -155px 0px;
+    background-position: -23.3vh 0vh;
 }
 
 .queen_white{
-    background-position: 5px -51px;
+    background-position: 0.5vh -7.5vh;
 }
 
 .queen_black{
-    background-position: 5px 0px;
+    background-position: 0.5vh 0vh;
 }
 
 .king_white{
-    background-position: -49px -51px;
+    background-position: -7.4vh -7.5vh;
 }
 
 .king_black{
-    background-position: -49px 0px;
+    background-position: -7.4vh 0vh;
 }
