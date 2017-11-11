@@ -1,0 +1,71 @@
+
+.grey{
+    background-color: dimgrey;
+    width: 70px;
+    height: 70px;
+}
+
+
+table{
+    margin: auto;
+    font-weight: 900;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+.pawn_white, .pawn_black, .castle_white, .castle_black, .knight_white, .knight_black, .bishop_white, .bishop_black,
+.queen_white, .queen_black, .king_white, .king_black{
+    background: url("chess.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.pawn_white{
+    background-position: -262px -51px;
+}
+
+.pawn_black{
+    background-position: -262px 0px;
+}
+
+.castle_white{
+    background-position: -102px -51px;
+ }
+
+.castle_black{
+    background-position: -102px 0px;
+}
+
+.knight_white{
+    background-position: -210px -51px;
+}
+
+.knight_black{
+    background-position: -210px 0px;
+}
+
+.bishop_white{
+    background-position: -155px -51px;
+}
+
+.bishop_black{
+    background-position: -155px 0px;
+}
+
+.queen_white{
+    background-position: 5px -51px;
+}
+
+.queen_black{
+    background-position: 5px 0px;
+}
+
+.king_white{
+    background-position: -49px -51px;
+}
+
+.king_black{
+    background-position: -49px 0px;
+}
