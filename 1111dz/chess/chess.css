@@ -70,3 +70,7 @@ table{
 .king_black{
     background-position: -7.4vh 0vh;
 }
+
+.turn{
+    transform: rotate(180deg);
+}
