@@ -1,0 +1,19 @@
+.frame{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("top-left.png") 0 0 no-repeat,
+                url("top-right.png") 100% 0 no-repeat,
+                url("bottom-left.png") 0 100% no-repeat,
+                url("bottom-right.png") 100% 100% no-repeat,
+                url("horizontal-top.png") 0% 0% repeat-x,
+                url("horizontal-bottom.png") 0% 100% repeat-x,
+                url("vertical.png") 0% 0% repeat-y,
+                url("vertical.png") 100% 0% repeat-y;
+}
+
+body{
+    margin: 0;
+}
+
+
