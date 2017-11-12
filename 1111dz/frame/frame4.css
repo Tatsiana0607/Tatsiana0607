@@ -1,0 +1,75 @@
+
+body{
+    margin: 0;
+}
+
+table{
+    width: 100vw;
+    height: 100vh;
+    border-collapse: collapse;
+}
+
+.top-left, .top-right, .bottom-left, .bottom-right{
+    width: 95px;
+    height: 92px;
+}
+
+.top-left{
+    background: url("top-left.png") 0 0 no-repeat;
+}
+
+.top-right{
+    background: url("top-right.png") 100% 0 no-repeat;
+}
+
+.bottom-left{
+    background: url("bottom-left.png") 0 100% no-repeat;
+}
+
+.bottom-right{
+    background: url("bottom-right.png") 100% 100% no-repeat;
+}
+
+.horizontal-top {
+    background: linear-gradient(to bottom,  black 0, black 5px,
+                                            white 5px, white 8px,
+                                            black 8px, black 14px,
+                                            white 14px, white 22px,
+                                            black 22px, black 28px,
+                                            white 28px, white 31px,
+                                            black 31px, black 37px,
+                                            white 37px, white 92px);
+}
+
+.horizontal-bottom {
+    background: linear-gradient(to top,     black 0, black 5px,
+                                            white 5px, white 8px,
+                                            black 8px, black 14px,
+                                            white 14px, white 22px,
+                                            black 22px, black 28px,
+                                            white 28px, white 31px,
+                                            black 31px, black 36px,
+                                            white 36px, white 92px);
+}
+
+.vertical-left {
+    background: linear-gradient(to right,   black 0, black 5px,
+                                            white 5px, white 9px,
+                                            black 9px, black 14px,
+                                            white 14px, white 23px,
+                                            black 23px, black 28px,
+                                            white 28px, white 32px,
+                                            black 32px, black 37px,
+                                            white 37px, white 92px);
+}
+
+.vertical-right {
+    background: linear-gradient(to left,    black 0, black 5px,
+                                            white 5px, white 9px,
+                                            black 9px, black 14px,
+                                            white 14px, white 23px,
+                                            black 23px, black 28px,
+                                            white 28px, white 32px,
+                                            black 32px, black 37px,
+                                            white 37px, white 92px);
+}

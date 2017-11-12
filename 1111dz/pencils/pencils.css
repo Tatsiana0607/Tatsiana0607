@@ -1,0 +1,119 @@
+html {
+    height: 100vh;
+    background:  repeating-linear-gradient(to bottom, #656362 0, #656362 1px, transparent 1px, transparent 25px),
+                 repeating-linear-gradient(to right, #656362 0, #656362 1px, #fbf6e0 1px, #fbf6e0 25px);
+}
+
+body{
+    margin: 0;
+}
+
+.margin{
+    width: 86vw;
+    height: 100vh;
+    border-right: solid #dd3c38 3px;
+    top: 0;
+    z-index: -1;
+}
+
+
+.margin, .pencil1, .pencil2{
+    position: absolute;
+}
+
+
+.pencil1{
+    top: 130px;
+    left: 20px;
+}
+
+.eraser1, .holder1, .body1, .tip1, .graphite1{
+    float: left;
+}
+
+.eraser1, .holder1, .body1{
+    height: 80px;
+}
+
+.eraser2, .holder2, .body2{
+    width: 80px;
+}
+
+.tip1, .graphite1, .tip2, .graphite2{
+    width: 0;
+    height: 0;
+}
+
+.eraser1{
+    width: 50px;
+    background: linear-gradient(to bottom, #b25171, palevioletred, #e589a7, palevioletred, #b25171);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.holder1{
+    width: 40px;
+    background: linear-gradient(to bottom, #706f6f, #f9f5f5, #706f6f);
+}
+
+.body1{
+    width: 60vw;
+    background: linear-gradient(to bottom, #202f5c, #6b85d0, #202f5c);
+}
+
+.tip1{
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid #f5deb2;
+}
+
+.graphite1{
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #3e3e3d;
+    position: relative;
+    top: 28px;
+    left: -13px;
+}
+
+
+
+
+.pencil2{
+    top: 10px;
+    left: 200px;
+}
+
+.eraser2{
+    height: 50px;
+    background: linear-gradient(to right, #b25171, palevioletred, #e589a7, palevioletred, #b25171);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.holder2{
+    height: 40px;
+    background: linear-gradient(to right, #706f6f, #f9f5f5, #706f6f);
+}
+
+.body2{
+    height: 40vh;
+    background: linear-gradient(to right, #d47979 0,    #d47979 20px,
+                                          #c44f4f 20px, #c44f4f 60px,
+                                          #a41010 60px, #a41010 80px);
+}
+
+.tip2{
+    border-top: 40px solid #f5deb2;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+}
+
+.graphite2{
+    border-top: 12px solid #3e3e3d;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: relative;
+    top: -11px;
+    left: 28px;
+}
