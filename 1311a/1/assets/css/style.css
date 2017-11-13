@@ -5,3 +5,20 @@ div{
 .row{
     clear: left;
 }
+
+
+.right{
+    float: right;
+}
+
+.marginLeft8{
+    margin-left: 8px;
+}
+
+.marginLeft16{
+    margin-left: -16px;
+}
+
+.marginLeft24{
+    margin-left: -24px;
+}
