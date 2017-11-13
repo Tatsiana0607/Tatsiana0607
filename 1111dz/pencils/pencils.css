@@ -57,23 +57,23 @@ body{
 }
 
 .body1{
-    width: 60vw;
+    width: calc(90vw - 190px);
     background: linear-gradient(to bottom, #202f5c, #6b85d0, #202f5c);
 }
 
 .tip1{
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
-    border-left: 40px solid #f5deb2;
+    border-left: 80px solid #f5deb2;
 }
 
 .graphite1{
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    border-left: 12px solid #3e3e3d;
+    border-left: 24px solid #3e3e3d;
     position: relative;
     top: 28px;
-    left: -13px;
+    left: -24px;
 }
 
 
@@ -97,23 +97,23 @@ body{
 }
 
 .body2{
-    height: 40vh;
+    height: calc(90vh - 180px);
     background: linear-gradient(to right, #d47979 0,    #d47979 20px,
                                           #c44f4f 20px, #c44f4f 60px,
                                           #a41010 60px, #a41010 80px);
 }
 
 .tip2{
-    border-top: 40px solid #f5deb2;
+    border-top: 80px solid #f5deb2;
     border-right: 40px solid transparent;
     border-left: 40px solid transparent;
 }
 
 .graphite2{
-    border-top: 12px solid #3e3e3d;
+    border-top: 24px solid #3e3e3d;
     border-right: 12px solid transparent;
     border-left: 12px solid transparent;
     position: relative;
-    top: -11px;
+    top: -23px;
     left: 28px;
 }
