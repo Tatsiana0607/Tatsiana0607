@@ -1,0 +1,155 @@
+.board{
+    position: relative;
+    width: 94vmin;
+    margin: auto;
+}
+
+.border_top, .border_bottom, .border_left, .border_right{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2.5vmin;
+    text-align: center;
+    background-color: #722329;
+    color: #fcead1;
+}
+
+.row, .border_top, .border_bottom{
+    position: relative;
+    width: 100%;
+}
+
+.row{
+    padding-top: 10.5vmin;
+}
+
+.border_top, .border_bottom{
+    height: 5vmin;
+    line-height: 5vmin;
+}
+
+.border_left, .border_right, .corner_left, .corner_right{
+    position: absolute;
+    top: 0;
+    width: 5vmin;
+}
+
+.border_left, .border_right{
+    height: 10.5vmin;
+    line-height: 10.5vmin;
+}
+
+.corner_left, .corner_right{
+    padding-top: 5vmin;
+    background-color: #722329;
+}
+
+.border_right, .corner_right{
+    right: 0;
+}
+
+.border_A, .border_B, .border_C, .border_D, .border_E, .border_F, .border_G, .border_H,
+.col_A, .col_B, .col_C, .col_D, .col_E, .col_F, .col_G, .col_H{
+    position: absolute;
+    top: 0;
+    width: 10.5vmin;
+}
+
+.col_A, .col_B, .col_C, .col_D, .col_E, .col_F, .col_G, .col_H{
+    padding-top: 10.5vmin;
+}
+
+.col_A, .border_A{
+    left: 5vmin;
+}
+
+.col_B, .border_B{
+    left: calc(10.5vmin + 5vmin);
+}
+
+.col_C, .border_C{
+    left: calc(10.5vmin * 2 + 5vmin);
+}
+
+.col_D, .border_D{
+    left: calc(10.5vmin * 3 + 5vmin);
+}
+
+.col_E, .border_E{
+    right: calc(10.5vmin * 3 + 5vmin);
+}
+
+.col_F, .border_F{
+    right: calc(10.5vmin * 2 + 5vmin);
+}
+
+.col_G, .border_G{
+    right: calc(10.5vmin + 5vmin);
+}
+
+.col_H, .border_H{
+    right: 5vmin;
+}
+
+
+.pawn_white, .pawn_black, .castle_white, .castle_black, .knight_white, .knight_black, .bishop_white, .bishop_black,
+.queen_white, .queen_black, .king_white, .king_black{
+    background: url("../img/chess.png") no-repeat;
+    background-size: 55vmin;
+}
+
+.pawn_white{
+    background-position: -47.3vmin -8.5vmin;
+}
+
+.pawn_black{
+    background-position: -47.2vmin 0.9vmin;
+}
+
+.castle_white{
+    background-position: -18vmin -8.5vmin;
+}
+
+.castle_black{
+    background-position: -18vmin 0.9vmin;
+}
+
+.knight_white{
+    background-position: -37.5vmin -8.5vmin;
+}
+
+.knight_black{
+    background-position: -37.5vmin 0.9vmin;
+}
+
+.bishop_white{
+    background-position: -27.8vmin -8.3vmin;
+}
+
+.bishop_black{
+    background-position: -27.5vmin 1.3vmin;
+}
+
+.queen_white{
+    background-position: 1.4vmin -8.3vmin;
+}
+
+.queen_black{
+    background-position: 1.6vmin 1.4vmin;
+}
+
+.king_white{
+    background-position: -8.3vmin -8.3vmin;
+}
+
+.king_black{
+    background-position: -8vmin 1.3vmin;
+}
+
+
+.white{
+    background-color: #f7dbb4;
+}
+
+.black{
+    background-color: #c6703f;
+}
