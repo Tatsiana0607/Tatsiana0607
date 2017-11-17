@@ -1,0 +1,29 @@
+
+.diamonds3, .clubs7, .heartsAce{
+    position: absolute;
+    width: 140px;
+    height: 190px;
+    background-image: url("../img/cards2.png");
+}
+
+.diamonds3{
+    top: 180px;
+    left: 40px;
+    background-position: -290px -195px;
+    z-index: 3;
+}
+
+.clubs7{
+    top: 110px;
+    left: 100px;
+    background-position: -146px -970px;
+    z-index: 2;
+
+}
+
+.heartsAce{
+    top: 40px;
+    left: 160px;
+    background-position: -433px -2328px;
+    z-index: 1;
+}
