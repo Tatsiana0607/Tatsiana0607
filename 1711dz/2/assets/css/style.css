@@ -1,0 +1,20 @@
+.row{
+    position: relative;
+    height: 20px;
+}
+
+.first, .second, .third{
+    position: absolute;
+}
+
+.first{
+    left: 0;
+}
+
+.second{
+    left: 15px;
+}
+
+.third{
+    left: 30px;
+}
