@@ -1,0 +1,173 @@
+.wrapper{
+    width: 960px;
+    position: relative;
+    left: 187px;
+}
+
+header{
+    position: relative;
+    padding-top: 108px;
+    top: 24px;
+}
+
+main{
+    position: relative;
+    top: 50px;
+    padding-top: 772px;
+}
+
+footer{
+    position: relative;
+    top: 81px;
+    padding-top: 180px;
+    margin-bottom: 30px;
+}
+
+.one, .two, .three, .four, .seven, .ten, .eleven, .twelve, .thirteen {
+    background-color: #777;
+}
+
+.five, .six, .eight, .nine{
+    background-color: #dcdcdc;
+}
+
+
+
+.one{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12.8%;
+    height: 100%;
+}
+
+.two{
+    position: absolute;
+    top: 0;
+    left: calc(12.8% + 23px);
+    width: 29%;
+    height: 100%;
+}
+
+.three{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 53.5%;
+    height: 100%;
+}
+
+.hr_top{
+    position: relative;
+    top: 35px;
+}
+
+.hr_bottom{
+    position: relative;
+    top: 66px;
+}
+
+
+aside{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19.17%;
+    height: 100%;
+}
+
+.four{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 43.39%;
+    width: 100%;
+}
+
+.seven{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 17.23%;
+    width: 100%;
+}
+
+article{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 78.75%;
+    height: 100%;
+}
+
+.five{
+    width: 100%;
+    height: 27.07%;
+}
+
+ul{
+    position: relative;
+    top: 5px;
+    padding: 0;
+}
+
+.six{
+    display: inline-block;
+    list-style-type: none;
+    width: 17.67%;
+    height: 150px;
+    margin-right: 18px;
+    margin-bottom: 17px;
+}
+
+.special{
+    margin-right: 0px;
+}
+
+
+.eight, .nine{
+    position: absolute;
+    bottom: 0;
+    width: 48.81%;
+    height: 200px;
+}
+
+.eight{
+    left: 0;
+}
+
+.nine{
+    right: 0;
+}
+
+
+.ten, .eleven{
+    position: absolute;
+    top: 0;
+    width: 30.94%;
+    height: 100%;
+}
+
+.eleven{
+    left: calc(30.94% + 29px);
+}
+
+.twelve, .thirteen{
+    right: 0;
+    position: absolute;
+    width: 32.08%;
+    height: 41.8%;
+}
+
+.twelve{
+    top: 0;
+}
+
+.thirteen{
+    bottom: 0;
+}
+
+
+
+
+
