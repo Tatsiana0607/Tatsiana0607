@@ -1,0 +1,25 @@
+nav{
+    width: 600px;
+    margin: auto;
+}
+
+ul{
+    padding: 0;
+    font-family: "untitled-font-1";
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+li:not(:last-child)::after{
+    content: "|";
+    margin-left: 20px;
+}
+
+ul:first-child::before{
+    content: "a";
+}
