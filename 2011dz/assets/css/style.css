@@ -107,24 +107,48 @@
     background-position: -47.4vmin 0.9vmin;
 }
 
+.chessTable>div:nth-of-type(n+9):not(:nth-of-type(n+17)):hover{
+    background-position: -47.4vmin -8.5vmin;
+}
+
 .chessTable>div:nth-of-type(1), .chessTable>div:nth-of-type(8){ /*черная ладья*/
     background-position: -18.3vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(1):hover, .chessTable>div:nth-of-type(8):hover{
+    background-position: -18.3vmin -8.5vmin;
 }
 
 .chessTable>div:nth-of-type(2), .chessTable>div:nth-of-type(7){ /*черный конь*/
     background-position: -37.6vmin 0.9vmin;
 }
 
+.chessTable>div:nth-of-type(2):hover, .chessTable>div:nth-of-type(7):hover{
+    background-position: -37.6vmin -8.5vmin;
+}
+
 .chessTable>div:nth-of-type(3), .chessTable>div:nth-of-type(6){ /*черный ферзь*/
     background-position: -27.8vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(3):hover, .chessTable>div:nth-of-type(6):hover{
+    background-position: -27.9vmin -8.3vmin;
 }
 
 .chessTable>div:nth-of-type(4){ /*черный король*/
     background-position: -8.3vmin 0.9vmin;
 }
 
+.chessTable>div:nth-of-type(4):hover{
+    background-position: -8.4vmin -8.4vmin;
+}
+
 .chessTable>div:nth-of-type(5){ /*черная королева*/
     background-position: 1.4vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(5):hover{
+    background-position: 1.2vmin -8.3vmin;
 }
 
 
@@ -132,22 +156,46 @@
     background-position: -47.4vmin -8.5vmin;
 }
 
+.chessTable>div:nth-of-type(n+49):not(:nth-of-type(n+57)):hover{
+    background-position: -47.4vmin 0.9vmin;
+}
+
 .chessTable>div:nth-of-type(57), .chessTable>div:nth-of-type(64){ /*белая ладья*/
     background-position: -18.3vmin -8.5vmin;
 }
 
+.chessTable>div:nth-of-type(57):hover, .chessTable>div:nth-of-type(64):hover{
+    background-position: -18.3vmin 0.9vmin;
+}
+
 .chessTable>div:nth-of-type(58), .chessTable>div:nth-of-type(63){ /*белый конь*/
-    background-position: -37.6vmin -8.5vmin;
+     background-position: -37.6vmin -8.5vmin;
+}
+
+.chessTable>div:nth-of-type(58):hover, .chessTable>div:nth-of-type(63):hover{
+    background-position: -37.6vmin 0.9vmin;
 }
 
 .chessTable>div:nth-of-type(59), .chessTable>div:nth-of-type(62){ /*белый ферзь*/
     background-position: -27.9vmin -8.3vmin;
 }
 
+.chessTable>div:nth-of-type(59):hover, .chessTable>div:nth-of-type(62):hover{
+    background-position: -27.9vmin 0.9vmin;
+}
+
 .chessTable>div:nth-of-type(60){ /*белый король*/
     background-position: -8.4vmin -8.3vmin;
 }
 
+.chessTable>div:nth-of-type(60):hover{
+    background-position: -8.3vmin 0.9vmin;
+}
+
 .chessTable>div:nth-of-type(61){ /*белая королева*/
     background-position: 1.4vmin -8.3vmin;
+}
+
+.chessTable>div:nth-of-type(61):hover{
+    background-position: 1.4vmin 0.9vmin;
 }
