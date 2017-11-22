@@ -1,0 +1,37 @@
+.content{
+    width: 42%;
+    margin: auto;
+}
+
+p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.bg{
+    background-color: #f6f5f3;
+    border: solid lightgray 1px;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.scroll{
+    height: 40px;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.blue{
+    color: #2b9897;
+}
+
+.grey{
+    font-style: italic;
+    color: #989788;
+}
