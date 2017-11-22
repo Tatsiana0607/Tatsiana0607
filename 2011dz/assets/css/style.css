@@ -1,0 +1,201 @@
+.chessTable{
+    width: 80vmin;
+    height: 80vmin;
+    margin: auto;
+    margin-top: 10vmin;
+    counter-reset: number 9;
+    border: solid maroon 2px;
+}
+
+.chessTable>div{
+    width: 10vmin;
+    height: 10vmin;
+    float: left;
+}
+
+
+.chessTable>div:nth-of-type(n+1):not(:nth-of-type(n+9)):nth-of-type(even),
+.chessTable>div:nth-of-type(n+9):not(:nth-of-type(n+17)):nth-of-type(odd),
+.chessTable>div:nth-of-type(n+17):not(:nth-of-type(n+25)):nth-of-type(even),
+.chessTable>div:nth-of-type(n+25):not(:nth-of-type(n+33)):nth-of-type(odd),
+.chessTable>div:nth-of-type(n+33):not(:nth-of-type(n+41)):nth-of-type(even),
+.chessTable>div:nth-of-type(n+41):not(:nth-of-type(n+49)):nth-of-type(odd),
+.chessTable>div:nth-of-type(n+49):not(:nth-of-type(n+57)):nth-of-type(even),
+.chessTable>div:nth-of-type(n+57):not(:nth-of-type(n+65)):nth-of-type(odd){
+    background-color: #c6703f;
+}
+
+.chessTable>div:nth-of-type(n+1):not(:nth-of-type(n+9)):nth-of-type(odd),
+.chessTable>div:nth-of-type(n+9):not(:nth-of-type(n+17)):nth-of-type(even),
+.chessTable>div:nth-of-type(n+17):not(:nth-of-type(n+25)):nth-of-type(odd),
+.chessTable>div:nth-of-type(n+25):not(:nth-of-type(n+33)):nth-of-type(even),
+.chessTable>div:nth-of-type(n+33):not(:nth-of-type(n+41)):nth-of-type(odd),
+.chessTable>div:nth-of-type(n+41):not(:nth-of-type(n+49)):nth-of-type(even),
+.chessTable>div:nth-of-type(n+49):not(:nth-of-type(n+57)):nth-of-type(odd),
+.chessTable>div:nth-of-type(n+57):not(:nth-of-type(n+65)):nth-of-type(even){
+    background-color: #f7dbb4;
+}
+
+.chessTable>div:nth-of-type(8n+1)::before, .chessTable>div:nth-of-type(-n+8)::after{
+    display: block;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 3vmin;
+    color: maroon;
+}
+
+.chessTable>div:nth-of-type(8n+1)::before{
+    counter-increment: number -1;
+    content: counter(number);
+    width: 5vmin;
+    line-height: 10.2vmin;
+    margin-left: -5vmin;
+}
+
+.chessTable>div:nth-of-type(-n+8)::after{
+    width: 10.2vmin;
+    line-height: 5vmin;
+    margin-top: -5vmin;
+}
+
+
+.chessTable>div:nth-of-type(1)::after {
+    margin-top: -15vmin;
+    content: "A";
+}
+
+.chessTable>div:nth-of-type(2)::after {
+    content: "B";
+}
+
+.chessTable>div:nth-of-type(3)::after {
+    content: "C";
+}
+
+.chessTable>div:nth-of-type(4)::after {
+    content: "D";
+}
+
+.chessTable>div:nth-of-type(5)::after {
+    content: "E";
+}
+
+.chessTable>div:nth-of-type(6)::after {
+    content: "F";
+}
+
+.chessTable>div:nth-of-type(7)::after {
+    content: "G";
+}
+
+.chessTable>div:nth-of-type(8)::after {
+    content: "H";
+}
+
+
+
+.chessTable>div:nth-of-type(n){
+    background: url("../img/chess.png") no-repeat;
+    background-size: 55vmin;
+}
+
+.chessTable>div:nth-of-type(n+17):not(:nth-of-type(n+49)){
+    background: url("");
+}
+
+.chessTable>div:nth-of-type(n+9):not(:nth-of-type(n+17)){ /*черные пешки*/
+    background-position: -47.4vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(n+9):not(:nth-of-type(n+17)):hover{
+    background-position: -47.4vmin -8.5vmin;
+}
+
+.chessTable>div:nth-of-type(1), .chessTable>div:nth-of-type(8){ /*черная ладья*/
+    background-position: -18.3vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(1):hover, .chessTable>div:nth-of-type(8):hover{
+    background-position: -18.3vmin -8.5vmin;
+}
+
+.chessTable>div:nth-of-type(2), .chessTable>div:nth-of-type(7){ /*черный конь*/
+    background-position: -37.6vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(2):hover, .chessTable>div:nth-of-type(7):hover{
+    background-position: -37.6vmin -8.5vmin;
+}
+
+.chessTable>div:nth-of-type(3), .chessTable>div:nth-of-type(6){ /*черный ферзь*/
+    background-position: -27.8vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(3):hover, .chessTable>div:nth-of-type(6):hover{
+    background-position: -27.9vmin -8.3vmin;
+}
+
+.chessTable>div:nth-of-type(4){ /*черный король*/
+    background-position: -8.3vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(4):hover{
+    background-position: -8.4vmin -8.4vmin;
+}
+
+.chessTable>div:nth-of-type(5){ /*черная королева*/
+    background-position: 1.4vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(5):hover{
+    background-position: 1.2vmin -8.3vmin;
+}
+
+
+.chessTable>div:nth-of-type(n+49):not(:nth-of-type(n+57)){ /*белые пешки*/
+    background-position: -47.4vmin -8.5vmin;
+}
+
+.chessTable>div:nth-of-type(n+49):not(:nth-of-type(n+57)):hover{
+    background-position: -47.4vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(57), .chessTable>div:nth-of-type(64){ /*белая ладья*/
+    background-position: -18.3vmin -8.5vmin;
+}
+
+.chessTable>div:nth-of-type(57):hover, .chessTable>div:nth-of-type(64):hover{
+    background-position: -18.3vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(58), .chessTable>div:nth-of-type(63){ /*белый конь*/
+     background-position: -37.6vmin -8.5vmin;
+}
+
+.chessTable>div:nth-of-type(58):hover, .chessTable>div:nth-of-type(63):hover{
+    background-position: -37.6vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(59), .chessTable>div:nth-of-type(62){ /*белый ферзь*/
+    background-position: -27.9vmin -8.3vmin;
+}
+
+.chessTable>div:nth-of-type(59):hover, .chessTable>div:nth-of-type(62):hover{
+    background-position: -27.9vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(60){ /*белый король*/
+    background-position: -8.4vmin -8.3vmin;
+}
+
+.chessTable>div:nth-of-type(60):hover{
+    background-position: -8.3vmin 0.9vmin;
+}
+
+.chessTable>div:nth-of-type(61){ /*белая королева*/
+    background-position: 1.4vmin -8.3vmin;
+}
+
+.chessTable>div:nth-of-type(61):hover{
+    background-position: 1.4vmin 0.9vmin;
+}
