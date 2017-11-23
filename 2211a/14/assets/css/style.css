@@ -1,0 +1,75 @@
+.wrapper{
+    width: 45vmin;
+    height: 45vmin;
+    margin: 25vmin auto;
+    border: solid black 2vmin;
+    border-radius: 25vmin;
+    position: relative;
+}
+
+.smile, .left-eye, .right-eye{
+    position: absolute;
+    border: solid black 2vmin;
+}
+
+.smile{
+    width: 60%;
+    height: 32%;
+    top: 55%;
+    left: 16%;
+    border-bottom-right-radius: 20vmin;
+    border-bottom-left-radius: 20vmin;
+    border-top: 0;
+}
+
+.left-eye, .right-eye{
+    width: 15%;
+    height: 7%;
+    top: 25%;
+    border-top-right-radius: 10vmin;
+    border-top-left-radius: 10vmin;
+    border-bottom: 0;
+}
+
+.left-eye{
+    left: 20%;
+}
+
+.right-eye{
+    right: 20%;
+}
+
+
+.smile::before, .smile::after, .left-eye::before, .left-eye::after, .right-eye::before, .right-eye::after{
+    content: "";
+    display: block;
+    width: 2vmin;
+    height: 2vmin;
+    background-color: black;
+    border-radius: 1vmin;
+}
+
+.smile::before{
+    margin-left: 27vmin;
+    margin-top: -1vmin;
+}
+
+.smile::after{
+    margin-left: -2vmin;
+    margin-top: -2vmin;
+}
+
+.left-eye::before, .right-eye::before{
+     margin-left: -2vmin;
+     margin-top: 2vmin;
+ }
+
+.left-eye::after{
+    margin-left: 6.8vmin;
+    margin-top: -2vmin;
+}
+
+.right-eye::after{
+    margin-left: 6.7vmin;
+    margin-top: -2vmin;
+}
