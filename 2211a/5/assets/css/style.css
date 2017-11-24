@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    background-color: darkcyan;
+}
+
+.wrapper{
+    width: 50vw;
+    height: 70vh;
+    margin: 15vh auto;
+    background-color: inherit;
+    outline: solid black 3px;
+    position: relative;
+}
+
+.red, .green, .blue, .yellow{
+    outline: solid black 3px;
+    position: absolute;
+}
+
+.red{
+    top: 10%;
+    left: 10%;
+    width: 20%;
+    height: 20%;
+    background-color: red;
+}
+
+.green{
+    top: 10%;
+    right: 10%;
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
+
+.blue{
+    bottom: 10%;
+    left: 10%;
+    width: 20%;
+    height: 50%;
+    background-color: blue;
+}
+
+.yellow{
+    bottom: 10%;
+    right: 10%;
+    width: 50%;
+    height: 20%;
+    background-color: yellow;
+}
+
+
+
+
+

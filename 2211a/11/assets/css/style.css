@@ -1,0 +1,40 @@
+.wrapper{
+    width: 50vmin;
+    height: 50vmin;
+    margin: 25vmin auto;
+    background-color: #e51875;
+    position: relative;
+}
+
+.circle, .horizontal, .vertical{
+    position: absolute;
+}
+
+.circle{
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    background-color: #fab250;
+    border-radius: 20vmin;
+}
+
+.horizontal, .vertical{
+    background-color: white;
+}
+
+.horizontal{
+    width: 20%;
+    height: 3%;
+    top: 48.5%;
+    left: 40%;
+}
+
+.vertical{
+    width: 3%;
+    height: 20%;
+    top: 40%;
+    left: 48.5%;
+}
+
+

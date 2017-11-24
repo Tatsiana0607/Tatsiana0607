@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Creating a chart</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="content">
+        <p class="headline">Creating a chart</p>
+
+        <p>To create a chart, we need to instantiate the <span class="bg">Chart</span> class. To do this, we need to
+            pass in the 2d context of where we want to draw the chart. Here's an example.</p>
+
+        <p class="bg"><span class="dark-blue">&lt;canvas</span> <span class="aquamarine">id=</span>
+            <span class="red">"myChart"</span> <span class="aquamarine">width=</span><span class="red">"400"</span>
+            <span class="aquamarine">height=</span><span class="red">"400"</span><span class="dark-blue">&gt;&lt;/canvas&gt;</span></p>
+
+        <p class="bg"><span class="comment">// Get the context of the canvas element we want to select</span><br>
+            <strong>var</strong> ctx = <span class="blue">document</span>.getElementById(<span class="red">"myChart"</span>).getContext(<span class="red">"2d"</span>);<br>
+            <strong>var</strong> myNewChart = <strong>new</strong> Chart(ctx).PolarArea(data);</p>
+
+        <p>We can also get the context of our canvas with jQuery. To do this, we need to get the DOM node out of
+            the jQuery collection, and call the <span class="bg">getContext("2d")</span> method on that.</p>
+
+        <p class="bg scroll"><span class="comment">// Get context with jQuery - using jQuery's .get() method.</span><br>
+        <strong>var</strong> ctx = $(<span class="red">"#myChart"</span>).get(<span class="aquamarine">0</span>).getContext(<span class="red">"2d"</span>);<br>
+        <span class="comment">// This will get the first returned node in the jQuery collection.</span><br>
+        <strong>var</strong> myNewChart = <strong>new</strong> Chart(ctx);</p>
+    </div>
+</body>
+</html>

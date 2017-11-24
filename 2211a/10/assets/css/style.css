@@ -1,0 +1,33 @@
+.wrapper{
+    width: 350px;
+    margin: 15px auto;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+}
+
+.quote{
+    background-color: #f5baac;
+    color: white;
+    padding: 15px 15px 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.quote::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    background-color: #f5baac;
+    transform: skewY(-60deg) rotate(20deg);
+}
+
+.author{
+    color: #978287;
+    margin-top: 30px;
+}
+
+

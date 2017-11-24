@@ -1,0 +1,81 @@
+.content{
+    width: 43%;
+    margin: auto;
+}
+
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Regular.woff') format('woff'),
+         url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Andale Mono';
+    src: url('../fonts/AndaleMono-webfont.eot');
+    src: url('../fonts/AndaleMono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AndaleMono-webfont.woff') format('woff'),
+         url('../fonts/AndaleMono-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+p{
+    font-family: 'Proxima Nova Regular', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    color: dimgray;
+}
+
+.headline{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+.bg{
+    background-color: #fafafa;
+    padding: 6px;
+    line-height: 20px;
+    border-radius: 5px;
+    font-family: 'Andale Mono', monospace;
+    font-size: 14px;
+    color: #363636;
+}
+
+.comment{
+    font-style: italic;
+    color: #989788;
+}
+
+.scroll{
+    height: 100px;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.dark-blue{
+    color: darkblue;
+}
+
+.blue{
+    color: steelblue;
+}
+
+.aquamarine{
+    color: teal;
+}
+
+.red{
+    color: mediumvioletred;
+}
+

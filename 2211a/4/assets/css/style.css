@@ -1,0 +1,48 @@
+.content{
+    width: 17%;
+    margin: auto;
+    background-color: #f2f2f2;
+}
+
+
+@font-face {
+    font-family: 'Muller ExtraBold DEMO';
+    src: url('../fonts/MullerExtraBoldDEMO.eot');
+    src: url('../fonts/MullerExtraBoldDEMO.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MullerExtraBoldDEMO.woff') format('woff'),
+         url('../fonts/MullerExtraBoldDEMO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    width: 92%;
+    margin: 1px auto;
+    padding: 14px 0px;
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Muller ExtraBold DEMO';
+    font-size: 20px;
+    background-color: white;
+    color: #4a79b5;
+}
+
+li:first-child, li:last-child{
+    padding: 5px 0px;
+}
+
+
+li:hover{
+    background-color: #4a79b5;
+    color: white;
+}
+
+
+
+
+
+

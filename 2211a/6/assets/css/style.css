@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: silver;
+}
+
+.first, .second, .third{
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.first, .third{
+    border-top: solid transparent 7vw;
+    border-left: solid transparent 7vw;
+    border-right: solid transparent 7vw;
+    border-bottom: solid green 7vw;
+    top: 45vh;
+}
+
+.first{
+    left: 25vw;
+}
+
+.third{
+    right: 25vw;
+}
+
+.second{
+    border-bottom: solid transparent 7vw;
+    border-left: solid transparent 7vw;
+    border-right: solid transparent 7vw;
+    border-top: solid green 15vw;
+    top: 43vh;
+    left: 43vw;
+}
+
+
+
