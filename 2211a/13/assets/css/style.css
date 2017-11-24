@@ -1,0 +1,116 @@
+.wrapper{
+    width: 100vmin;
+    height: 80vmin;
+    margin: 10vmin auto;
+    position: relative;
+}
+
+.top, .main{
+    position: absolute;
+    background-color: #cfa448;
+    border-top-left-radius: 5vmin;
+    border-top-right-radius: 5vmin;
+}
+
+.top{
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 50%;
+}
+
+.main{
+    top: 5vmin;
+    width: 100%;
+    height: 50%;
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    background-color: #ffcd59;
+    border-radius: 5vmin;
+    bottom: 0;
+    z-index: 4;
+}
+
+.first-file, .second-file, .third-file{
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    top: 25%;
+    left: 5%;
+    background-color: #e4e7e8;
+    border: solid white 0.5vmin;
+    border-radius: 3vmin;
+    transition: transform 0.5s ease-out 0.1s;
+}
+
+.first-file{
+    z-index: 3;
+}
+
+.first-file:hover{
+    transform: translateX(30vmin);
+}
+
+.second-file{
+    transform: scale(0.9) translateY(-8vmin);
+    z-index: 2;
+}
+
+.second-file:hover{
+    transform: scale(0.9) translateY(-8vmin) translateX(30vmin);
+}
+
+.third-file{
+    transform: scale(0.8) translateY(-16vmin);
+    z-index: 1;
+}
+
+.third-file:hover{
+    transform: scale(0.8) translateY(-16vmin) translateX(30vmin);
+}
+
+.first-file::after, .second-file::after, .third-file::after{
+    content: "e";
+    position: absolute;
+    top: 1vmin;
+    right: 1vmin;
+    font-family: "untitled-font-1";
+    font-size: 6vmin;
+    color: #a5a7a7;
+    z-index: 3;
+}
+
+.circle, .circle::before, .circle::after{
+    width: 3vmin;
+    height: 3vmin;
+    border-radius: 3vmin;
+    z-index: 2;
+}
+
+.circle{
+    position: absolute;
+    top: 3%;
+    left: 8%;
+    background-color: #ffa60b;
+}
+
+.circle::before, .circle::after{
+    content: "";
+    display: block;
+}
+
+.circle::before{
+    margin-left: -5vmin;
+    background-color: #f44a4e;
+}
+
+.circle::after{
+    margin-left: 5vmin;
+    margin-top: -3vmin;
+    background-color: #31cb93;
+}
+
