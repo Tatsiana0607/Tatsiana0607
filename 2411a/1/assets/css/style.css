@@ -1,0 +1,33 @@
+.border6{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: white;
+    border: solid red 10px;
+    outline: solid fuchsia 10px;
+}
+
+.border6::before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: solid green 10px;
+    outline: solid blue 10px;
+}
+
+
+.border6::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: solid black 10px;
+    outline: solid yellow 10px;
+}
