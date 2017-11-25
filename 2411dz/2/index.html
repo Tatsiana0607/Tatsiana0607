@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>STAR WARS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <video autoplay loop muted class="bg-video"><source src="assets/video/cosmos.mp4" type="video/mp4"></video>
+    <audio id="sound-link-1" preload="auto"><source src="assets/audio/on.mp3" type="audio/mp3"></audio>
+    <audio id="sound-link-2" preload="auto"><source src="assets/audio/off.mp3" type="audio/mp3"></audio>
+    <audio id="sound-link-3" loop preload="auto"><source src="assets/audio/sound.mp3" type="audio/mp3"></audio>
+
+    <img src="assets/img/logo.png" alt="Star Wars Logo">
+    <div class="light-saber">
+        <div class="left-blade"></div>
+        <div class="right-blade"></div>
+    </div>
+
+    <script>
+        var turnOn = $("#sound-link-1")[0];
+        var turnOff = $("#sound-link-2")[0];
+        var sound = $("#sound-link-3")[0];
+        $(".light-saber").mouseenter(function() {
+            turnOn.play();
+            sound.play();
+        });
+        $(".light-saber").mouseleave(function() {
+            turnOff.play();
+            sound.pause();
+        });
+    </script>
+
+</body>
+</html>
