@@ -20,9 +20,9 @@
     height: 30px;
     position: absolute;
     top: 80px;
-    right: 100px;
+    right: 120px;
     background-color: #f5baac;
-    transform: skewY(-60deg) rotate(20deg);
+    transform: skew(-70deg, -40deg);
 }
 
 .author{

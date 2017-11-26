@@ -1,0 +1,121 @@
+.wrapper{
+    width: 437px;
+    height: 480px;
+    margin: 20px auto;
+    background-color: #e3e3e1;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'Garage Gothic Regular';
+    src: url('../fonts/Garage-Gothic-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neuron ExtraBold';
+    src: url('../fonts/Neuron-ExtraBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.headline{
+    width: 379px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    background-color: darkgray;
+}
+
+h1{
+    font-family: 'Garage Gothic Regular';
+    margin: 0 40px;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.first-column, .second-column{
+    width: 40%;
+    position: absolute;
+    top: 80px;
+}
+
+.first-column{
+    left: 30px;
+}
+
+.second-column{
+    right: 30px;
+}
+
+ul{
+    padding: 0;
+    margin: 5px 0;
+}
+
+li{
+    list-style-type: none;
+    font-family: Gadget, sans-serif;
+    font-size: 15px;
+    padding: 5.5px 0px;
+}
+
+li:not(:nth-of-type(-n+2)){
+    color: #624269;
+}
+
+li:first-child{
+    font-family: 'Neuron ExtraBold';
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
+li:not(:last-child):not(:nth-of-type(-n+2))::after,
+.first-column>ul:nth-of-type(1)>li:nth-of-type(2)::after{
+    content: "";
+    display: block;
+    border-bottom: solid #d0d0ce 1px;
+    padding: 4px 0px;
+}
+
+.first-column>ul:nth-of-type(1)>li:nth-of-type(2)::before{
+    content: "d";
+    font-family: untitled-font-1;
+    color: #624269;
+    margin-right: 5px;
+}
+
+.second-column>ul:nth-of-type(1)>li:last-child::after{
+    content: "c";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 60px;
+    font-family: untitled-font-1;
+    line-height: 10px;
+    font-size: 22px;
+    color: #624269;
+}
+
+.first-column>ul:nth-of-type(1)>li:nth-of-type(2){
+    color: #624269;
+    font-weight: 700;
+}
+
+.second-column>ul:nth-of-type(1)>li:nth-of-type(2),
+ul:nth-of-type(2)>li:nth-of-type(2){
+    color: white;
+    background-color: #a17eaf;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+.second-column>ul:nth-of-type(1)>li:nth-of-type(2){
+    margin-top: 3px;
+}
