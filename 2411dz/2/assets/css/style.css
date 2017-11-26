@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+.bg-video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+}
+
+video {
+    object-fit: contain;
+}
+
+
+img{
+    width: 30%;
+    position: relative;
+    top: 20px;
+    left: 450px;
+}
+
+.light-saber{
+    width: 370px;
+    height: 150px;
+    position: relative;
+    top: 150px;
+    left: 470px;
+    background: url("../img/lightsaber.png") no-repeat;
+
+}
+
+.left-blade, .right-blade{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 4px red,
+                inset 0px 0px 4px 4px red;
+    transition: width ease-in-out 1s;
+    z-index: -1;
+}
+
+.left-blade{
+    top: 67px;
+    right: 335px;
+}
+
+.right-blade{
+    top: 65px;
+    left: 350px;
+}
+
+.light-saber:hover .left-blade, .light-saber:hover .right-blade{
+    width: 400px;
+    transition: width ease-in-out 0.3s;
+}
+
