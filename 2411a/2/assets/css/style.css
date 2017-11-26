@@ -1,0 +1,13 @@
+.border6{
+    width: 140px;
+    height: 140px;
+    position: relative;
+    background-color: white;
+    box-shadow: inset 0 0 0 10px fuchsia,
+                inset 0 0 0 20px red,
+                inset 0 0 0 30px blue,
+                inset 0 0 0 40px green,
+                inset 0 0 0 50px yellow,
+                inset 0 0 0 60px black;
+}
+
