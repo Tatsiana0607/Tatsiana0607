@@ -1,0 +1,5 @@
+
+input[type="checkbox"]:checked~input[type="radio"],
+input[type="checkbox"]:checked~label{
+    display: none;
+}
