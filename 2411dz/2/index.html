@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>STAR WARS</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -14,23 +13,25 @@
     <audio id="sound-link-3" loop preload="auto"><source src="assets/audio/sound.mp3" type="audio/mp3"></audio>
 
     <img src="assets/img/logo.png" alt="Star Wars Logo">
-    <div class="light-saber">
+    <div class="light-saber" onmouseover="turnOn();" onmouseout="turnOff();">
         <div class="left-blade"></div>
         <div class="right-blade"></div>
     </div>
 
     <script>
-        var turnOn = $("#sound-link-1")[0];
-        var turnOff = $("#sound-link-2")[0];
-        var sound = $("#sound-link-3")[0];
-        $(".light-saber").mouseenter(function() {
-            turnOn.play();
+        var on = document.getElementById("sound-link-1");
+        var off = document.getElementById("sound-link-2");
+        var sound = document.getElementById("sound-link-3");
+
+        function turnOn(){
+            on.play();
             sound.play();
-        });
-        $(".light-saber").mouseleave(function() {
-            turnOff.play();
+        }
+
+        function turnOff(){
+            off.play();
             sound.pause();
-        });
+        }
     </script>
 
 </body>
