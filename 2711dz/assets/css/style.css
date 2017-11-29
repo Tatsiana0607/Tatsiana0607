@@ -1,0 +1,108 @@
+.wrapper{
+    width: 70vw;
+    margin: auto;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+}
+
+header, footer{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 600;
+    color: darkblue;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    background-color: #add8e6;
+}
+
+header{
+    padding: 15px;
+}
+
+footer{
+    padding: 25px;
+    clear: both;
+}
+
+h4{
+    margin-left: 20px;
+}
+
+h3{
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+main{
+    overflow: hidden;
+    clear: both;
+    background: url("../img/ball.png") 100% 0% repeat-y;
+    background-size: 60px;
+}
+
+aside{
+    width: 170px;
+    padding-right: 15px;
+    background-color: #f0e68c;
+    float: left;
+}
+
+section{
+    float: right;
+}
+
+.content{
+    margin: 20px;
+    width: calc(70vw - 230px);
+}
+
+img{
+    float: left;
+    width: calc(30% + 100px);
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 320px){
+
+    body{
+        margin: 0;
+    }
+
+    .wrapper{
+        margin: 0;
+        width: 100%;
+    }
+
+    header, footer{
+        font-size: 6vw;
+        padding: 10px;
+    }
+
+    h3{
+        margin: 15px;
+    }
+
+    h4{
+        margin: 10px 20px;
+    }
+
+    ul{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    main, aside, section, img{
+        width: 100%;
+    }
+
+    .content{
+        margin: 0 5%;
+        width: 90%;
+    }
+}
