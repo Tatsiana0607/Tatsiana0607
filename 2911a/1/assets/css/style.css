@@ -1,0 +1,27 @@
+form{
+    width: 300px;
+}
+
+.labels, .inputs{
+    float: left;
+}
+
+.labels{
+    width: 30%;
+}
+
+.inputs{
+    width: 70%;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+label{
+    display: block;
+    margin-bottom: 14px;
+}
+/*#login{*/
+    /**/
+/*}*/
