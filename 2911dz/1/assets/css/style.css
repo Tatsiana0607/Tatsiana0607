@@ -82,3 +82,26 @@ label:hover, li:hover, li:hover a{
     color: white;
     background-color: #75cca5;
 }
+
+
+@media screen and (max-width: 450px){
+
+    .wrapper{
+        width: 200px;
+        margin: auto;
+    }
+
+    ul{
+        width: 100%;
+    }
+
+    label[for=menu], label[for=menu]:hover{
+        width: calc(100% - 20px);
+    }
+
+    #point2:checked~ul{
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
