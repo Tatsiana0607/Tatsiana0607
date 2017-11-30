@@ -7,6 +7,25 @@
     position: relative;
 }
 
+.menu-list{
+    counter-reset: list1;
+}
+
+.menu-list li:after, .menu-list label:after{
+    counter-increment: list1;
+    content: " " counter(list1);
+    color: #616161;
+}
+
+.point2-list{
+    counter-reset: list2;
+}
+
+.point2-list li:after{
+    counter-increment: list2;
+    content: " " counter(list1) "." counter(list2);
+    color: #616161;
+}
 
 #menu, #point2, #menu~ul, #point2~ul,
 #menu:not(:checked)~label[for=menu]:nth-of-type(2),
@@ -59,7 +78,7 @@ li>a{
 }
 
 
-ul>label:after{
+ul>label:before{
     content: "f";
     font-family: "untitled-font-1";
     font-size: 20px;
@@ -78,7 +97,7 @@ label[for=menu], label[for=menu]:hover{
 }
 
 
-label:hover, li:hover, li:hover a{
+label:hover, li:hover, li:hover a, li:hover:after, label:hover:after{
     color: white;
     background-color: #75cca5;
 }
