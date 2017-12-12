@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    background-image: url("../img/back.png");
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: #e8d1b1;
+}
+
+.wrapper{
+    width: 900px;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    border: solid #693a32 10px;
+    border-radius: 10px;
+    height: 300px;
+}
+
+input[name=slider] {
+    display: none;
+}
+
+[id=breakfast]:not(:checked)~div.breakfast,
+[id=dinner]:not(:checked)~div.dinner,
+[id=supper]:not(:checked)~div.supper{
+    opacity: 0;
+    transition: all 2s;
+}
+
+[id=breakfast]:checked~div.breakfast,
+[id=dinner]:checked~div.dinner,
+[id=supper]:checked~div.supper{
+    opacity: 1;
+    z-index: 2;
+    transition: all 2s;
+}
+
+label{
+    display: block;
+    float: left;
+    margin: -100px 75px 60px 75px;
+    width: 110px;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+}
+
+label:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    opacity: 0;
+    width: 110px;
+    height: 3px;
+    background-color: #e8d1b1;
+    transition: all 0.2s;
+}
+
+[id=breakfast]:checked+label:after,
+[id=dinner]:checked+label:after,
+[id=supper]:checked+label:after{
+    opacity: 1;
+}
+
+label:hover:after{
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.breakfast, .dinner, .supper{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/fabric.jpg");
+}
+
+.first-meal, .second-meal, .third-meal{
+    width: 220px;
+    height: 220px;
+    float: left;
+    margin: 40px 37px;
+    border: solid #693a32 3px;
+    border-radius: 10px;
+}
+
+.first-meal, .second-meal, .third-meal{
+    background: url("../img/dishes.jpg");
+}
+
+.breakfast .first-meal{
+    background-position: 0px 0px;
+}
+
+.breakfast .second-meal{
+    background-position: 440px 0;
+}
+
+.breakfast .third-meal{
+    background-position: 220px 0;
+}
+
+.dinner .first-meal{
+    background-position: 0 440px;
+}
+
+.dinner .second-meal{
+    background-position: 440px 440px;
+}
+
+.dinner .third-meal{
+    background-position: 220px 440px;
+}
+
+.supper .first-meal{
+    background-position: 0 220px;
+}
+
+.supper .second-meal{
+    background-position: 440px 220px;
+}
+
+.supper .third-meal{
+    background-position: 220px 220px;
+}
+
+
+.name,
+.first-meal:hover .name,
+.second-meal:hover .name,
+.third-meal:hover .name{
+    position: relative;
+    top: 10px;
+    width: calc(100% + 26px);
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: -13px;
+    background: #693a32;
+    color: #e8d1b1;
+}
+
+.name:before, .name:after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    border-top: 10px solid #4a2020;
+}
+
+.name:before{
+    left: 0;
+    border-left: 10px solid transparent;
+}
+
+.name:after{
+    right: 0;
+    border-right: 10px solid transparent;
+}
+
+
+.name{
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.7s;
+}
+
+.first-meal:hover .name,
+.second-meal:hover .name,
+.third-meal:hover .name{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.7s;
+}
+
+
+
+.price,
+.first-meal:hover .price,
+.second-meal:hover .price,
+.third-meal:hover .price{
+    position: relative;
+    left: -12px;
+    top: 130px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #e8d1b1;
+    background: #8a0a18;
+}
+
+.price:before, .price:after{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+.price:before{
+    top: -9px;
+    left: 0px;
+    border-bottom: 9px solid #410914;
+    border-left: 9px solid transparent;
+}
+
+.price:after{
+    right: -14.5px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #8a0a18;
+}
+
+.price{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.7s;
+}
+
+.first-meal:hover .price,
+.second-meal:hover .price,
+.third-meal:hover .price{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.7s;
+}
+
+
+@media screen and (max-width: 320px){
+
+    .wrapper{
+        width: 100%;
+        margin-top: 100px;
+        border: 0px;
+        height: 800px;
+    }
+
+    label{
+        margin: 10px calc((100% - 130px) / 2);
+        top: -250px;
+    }
+
+    .breakfast, .dinner, .supper{
+        height: 100%;
+    }
+
+    .first-meal, .second-meal, .third-meal{
+        margin: 20px calc((100% - 220px) / 2);
+    }
+}

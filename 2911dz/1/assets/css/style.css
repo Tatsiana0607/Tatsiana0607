@@ -1,0 +1,128 @@
+.wrapper{
+    width: 450px;
+    margin: auto;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+.menu-list{
+    counter-reset: list1;
+}
+
+.menu-list li:after, .menu-list label:after{
+    counter-increment: list1;
+    content: " " counter(list1);
+    color: #616161;
+}
+
+.point2-list{
+    counter-reset: list2;
+}
+
+.point2-list li:after{
+    counter-increment: list2;
+    content: " " counter(list1) "." counter(list2);
+    color: #616161;
+}
+
+#menu, #point2, #menu~ul, #point2~ul,
+#menu:not(:checked)~label[for=menu]:nth-of-type(2),
+#menu:checked+label[for=menu]
+{
+    display: none;
+}
+
+#menu:checked~ul, #point2:checked~ul{
+    display: block;
+}
+
+ul{
+    padding: 15px 0 0 0;
+    margin: -10px 0 0 0;
+    width: 45%;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 0px 2px 2px lightgray;
+    box-shadow: 0px 0px 2px 2px lightgray;
+}
+
+#point2:checked~ul{
+    position: absolute;
+    left: 46%;
+    top: 45%;
+    padding: 0;
+}
+
+
+li, label{
+    display: block;
+    width: calc(100% - 20px);
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+li{
+    list-style-type: none;
+}
+
+label{
+    color: #616161;
+    position: relative;
+}
+
+li>a{
+    text-decoration: none;
+    color: #616161;
+    width: 100%;
+}
+
+
+ul>label:before{
+    content: "f";
+    font-family: "untitled-font-1";
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+
+
+label[for=menu], label[for=menu]:hover{
+    width: calc(45% - 20px);
+    background-color: #31805c;
+    color: white;
+    -webkit-box-shadow: 0px 1px 1px 2px lightgray;
+    box-shadow: 0px 1px 1px 2px lightgray;
+}
+
+
+label:hover, li:hover, li:hover a, li:hover:after, label:hover:after{
+    color: white;
+    background-color: #75cca5;
+}
+
+
+@media screen and (max-width: 450px){
+
+    .wrapper{
+        width: 200px;
+        margin: auto;
+    }
+
+    ul{
+        width: 100%;
+    }
+
+    label[for=menu], label[for=menu]:hover{
+        width: calc(100% - 20px);
+    }
+
+    #point2:checked~ul{
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
