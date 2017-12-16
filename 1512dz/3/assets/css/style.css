@@ -1,0 +1,61 @@
+.flower{
+    display: block;
+    margin: auto;
+}
+
+.core, .petal, .stalk, .leaf{
+    transition: 0.5s;
+}
+
+.stalk-title, .petal-title, .leaf-title{
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #e54e46;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.stalk-title{
+    top: 340px;
+    left: 700px;
+}
+
+.petal-title{
+    top: 165px;
+    left: 765px;
+}
+
+.leaf-title{
+    top: 300px;
+    left: 570px;
+}
+
+.flower:hover~.petal-title,
+.flower:hover~.stalk-title,
+.flower:hover~.leaf-title
+{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.core:hover, .petal:hover, .stalk:hover, .leaf:hover{
+    stroke-width: 5;
+    stroke: #e54e46;
+    transition: 0.5s;
+}
+
+.core:hover{
+    rx: 27;
+    ry: 27;
+}
+
+.petal:hover{
+    rx: 70;
+    stroke-width: 6;
+}
+
+.stalk:hover{
+    stroke-width: 10;
+}
