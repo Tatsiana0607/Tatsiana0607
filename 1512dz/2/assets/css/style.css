@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    width: 420px;
+    margin: auto;
+}
+
+.content{
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.video{
+    margin-bottom: 20px;
+}
