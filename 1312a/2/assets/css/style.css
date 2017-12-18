@@ -1,0 +1,16 @@
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.first{
+    order: 10;
+}
+
+.second{
+    order: 20;
+}
+
+.third{
+    order: 30;
+}
