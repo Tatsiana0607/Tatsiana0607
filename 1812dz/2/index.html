@@ -8,6 +8,10 @@
     <h1 id="message" style="text-align: center"></h1>
     <script type="text/javascript">
         var age = prompt("Сколько Вам лет?");
+        while (age == ""){
+            alert("Указание возраста является обязательным!");
+            age = prompt("Сколько Вам лет?");
+        }
         if(age < 18){
             alert("Вам запрещено покупать алкоголесодержащую и табачную продукцию!");
             document.getElementById("message").innerText = "Покиньте страницу немедленно!";
