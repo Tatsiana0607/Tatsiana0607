@@ -1,0 +1,61 @@
+.wrapper{
+    width: 600px;
+    margin: auto;
+}
+
+ul{
+    margin: 40px 0;
+    padding: 0;
+    z-index: 2;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 45px;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 15px;
+    border: solid #af6b00 3px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.figure{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#rectangle{
+    width: 300px;
+    height: 200px;
+    background-color: black;
+}
+
+#circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: red;
+}
+
+#triangle{
+    width: 0;
+    height: 0;
+    border-top: solid green 160px;
+    border-left: solid transparent 160px;
+    border-right: solid transparent 160px;
+    border-bottom: solid transparent 160px;
+}
+
+#rectangle:target, #circle:target, #triangle:target{
+    display: block;
+}
+
+#rectangle:not(:target), #circle:not(:target), #triangle:not(:target){
+    display: none;
+}
+
