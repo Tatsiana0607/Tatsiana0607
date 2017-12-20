@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Запрос возраста на JS</title>
+</head>
+<body>
+    <h1 id="message" style="text-align: center"></h1>
+    <script type="text/javascript">
+        var age = prompt("Сколько Вам лет?");
+        while (age == ""){
+            alert("Указание возраста является обязательным!");
+            age = prompt("Сколько Вам лет?");
+        }
+        if(age < 18){
+            alert("Вам запрещено покупать алкоголесодержащую и табачную продукцию!");
+            document.getElementById("message").innerText = "Покиньте страницу немедленно!";
+            document.getElementById("message").style.color = "red";
+        }
+        else{
+            alert("Вам разрешено покупать алкоголесодержащую и табачную продукцию.");
+            document.getElementById("message").innerText = "Развлекайтесь :)";
+            document.getElementById("message").style.color = "green";
+        }
+    </script>
+</body>
+</html>
