@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Автомобили</title>
+</head>
+<body>
+    <script>
+        //константы
+        var INCOME_PER_YEAR = 1; //доход в год (в биткоинах)
+        var EXPLOITATION_TIME = 10; //срок эксплуатации (в годах)
+        var MILEAGE_PER_YEAR = 20000; //пробег в год (в км)
+        var FUEL_PRICE = 0.000045; //стоимость топлива за литр (в биткоинах)
+
+        //1 задание
+        var auto=[{brand: "Ford",        model: "Focus ST",           color: "белый",          fuel: 13.8, price: 1.56, seats: 4, year: 2008},
+                  {brand: "Audi",        model: "A3 Cabriolet",       color: "белый",          fuel: 10,   price: 2.6,  seats: 4, year: 2008},
+                  {brand: "Lamborghini", model: "Murcielago LP640-4", color: "желтый",         fuel: 32.3, price: 37.3, seats: 2, year: 2005},
+                  {brand: "Volkswagen",  model: "Passat Highline",    color: "черный",         fuel: 9.6,  price: 2.5,  seats: 5, year: 2010},
+                  {brand: "Bugatti",     model: "Veyron EB 16.4",     color: "черный/красный", fuel: 40,   price: 150,  seats: 2, year: 2005},
+                  {brand: "Kia",         model: "Rio Hatchback",      color: "оранжевый",      fuel: 7.9,  price: 0.87, seats: 5, year: 2005},
+                  {brand: "FIAT",        model: "Doblo Combi",        color: "синий",          fuel: 4.8,  price: 1.4,  seats: 5, year: 2013},
+                  {brand: "Toyota",      model: "Land Cruiser Prado", color: "металлик",       fuel: 6.6,  price: 5.45, seats: 7, year: 2017},
+                  {brand: "Ferrari",     model: "F458 Spider",        color: "красный",        fuel: 13.3, price: 16,   seats: 2, year: 2012},
+                  {brand: "BMW",         model: "M1 Coupe",           color: "бордовый",       fuel: 13.6, price: 2.84, seats: 4, year: 2011}];
+
+        //начальные значения для сравнения с последующими
+        var newYear = auto[0].year;
+        var oldYear = auto[0].year;
+        var cheapest = auto[0].price;
+        var mostExpensive = auto[0].price;
+        var economical = auto[0].fuel;
+
+        for(var i=0; i<auto.length; i++){
+            if(auto[i].year > newYear) {
+                newYear = auto[i].year;         //определяем год выпуска самых новых автомобилей
+            }
+            if(auto[i].year < oldYear) {
+                oldYear = auto[i].year;         //определяем год выпуска самых старых автомобилей
+            }
+            if(auto[i].price < cheapest) {
+                cheapest = auto[i].price;       //определяем цену самых дешевых автомобилей
+            }
+            if(auto[i].price > mostExpensive) {
+                mostExpensive = auto[i].price;  //определяем цену самых дорогих автомобилей
+            }
+            if(auto[i].fuel < economical) {
+                economical = auto[i].fuel;      //определяем расход топлива самых экономичных автомобилей
+            }
+        }
+
+        //2 задание
+        for(i=0; i<auto.length; i++){
+            if(auto[i].year==newYear) console.log("Самый новый автомобиль: "+auto[i].brand+" "+auto[i].model+". Год выпуска: "+auto[i].year);
+            if(auto[i].year==oldYear) console.log("Самый старый автомобиль: "+auto[i].brand+" "+auto[i].model+". Год выпуска: "+auto[i].year);
+            if(auto[i].price==cheapest) console.log("Самый дешевый автомобиль: "+auto[i].brand+" "+auto[i].model+". Цена: "+auto[i].price+" BTC");
+            if(auto[i].fuel==economical) console.log("Самый экономичный автомобиль: "+auto[i].brand+" "+auto[i].model+". Расход топлива: "+auto[i].fuel+" л на 100 км");
+        }
+        var diff=newYear - oldYear; //разница в возрасте
+        console.log("Разница в возрасте самого старого и самого нового автомобиля - "+diff+" лет.");
+
+        //3 задание
+        var fuelCost = EXPLOITATION_TIME * MILEAGE_PER_YEAR * auto[0].fuel/100 * FUEL_PRICE; //начальные значения
+        var minTotalCost = fuelCost + auto[0].price;                                   // для сравнения с последующими
+        var totalCost;
+        var bestCar={};
+
+        for(i=0;i<auto.length;i++)
+        {
+            fuelCost = EXPLOITATION_TIME * MILEAGE_PER_YEAR * auto[i].fuel/100 * FUEL_PRICE; //затраты на топливо
+            totalCost = fuelCost+auto[i].price;  //суммарные затраты = затраты на топливо + стоимость авто
+            if(totalCost < minTotalCost)
+            {
+                minTotalCost = totalCost;
+                bestCar=auto[i];
+            }
+        }
+        console.log("Наиболее выгодный автомобиль: "+bestCar.brand+" "+bestCar.model+". Затраты на его покупку + 10 лет эксплуатации составят "+ minTotalCost+" BTC");
+
+        //4 задание
+        for(i=0;i<auto.length;i++){
+            if(auto[i].price==mostExpensive) {
+                console.log("Самый дорогой автомобиль: "+auto[i].brand+" "+auto[i].model+". Цена: "+auto[i].price+" BTC");
+                console.log("При годовом доходе размером "+ INCOME_PER_YEAR +" BTC вам придется работать "+auto[i].price/INCOME_PER_YEAR+" лет для его покупки.");
+            }
+        }
+    </script>
+</body>
+</html>
