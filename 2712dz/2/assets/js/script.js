@@ -10,10 +10,19 @@ function isPalindrome(str){
     return true;
 }
 
-var phrase=prompt("Введите строку: ");
+for(;;){
+    var phrase=prompt("Введите строку: ");
+    if(phrase=="") {
+        alert("Введите хотя бы одно слово!");
+        continue;
+    }
+    if(phrase==null) break;
 
-if(isPalindrome(phrase))
-    alert("Строка является палиндромом.");
-else alert("Строка не является палиндромом.");
+    if(isPalindrome(phrase))
+        alert("Строка является палиндромом.");
+    else alert("Строка не является палиндромом.");
+}
+
+
 
 
