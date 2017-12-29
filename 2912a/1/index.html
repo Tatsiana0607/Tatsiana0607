@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Обработка событий</title>
+
+    <style>
+        .button{
+            border-radius: 20px;
+        }
+    </style>
+
+    <script defer="defer">
+        function clickListener(element){
+            console.log("Элемент: "+element);
+        }
+
+        function changeButton(){
+            var btn=document.querySelector('input');
+            btn.size="100";
+            btn.style.height='50px';
+            btn.className = "button";
+        }
+    </script>
+</head>
+<body onload="alert('Загрузилось');" onclick="clickListener('body');">
+
+    <h1 onclick="clickListener('заголовок');">Заголовок</h1>
+    <p onclick="clickListener('параграф');">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti impedit
+        qui quia. Atque maxime molestias perferendis quia velit. Fugit inventore ipsam natus neque officiis optio porro.
+        Autem fugiat iure similique!</p>
+
+    <input size="100" type="button" value="Кнопка" onclick="changeButton();">
+
+</body>
+</html>
